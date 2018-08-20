@@ -1,0 +1,93 @@
+{
+	"$schema": "http://json.schemastore.org/install",
+	"resources": {
+		"body": [
+			{
+				"type": "style",
+				"src": "./source/app.css"
+      },
+			{
+				"type": "script",
+				"src": "https://service.force.com/embeddedservice/4.1/esw.min.js"
+	  },
+			{
+				"type": "script",
+				"src": "./source/app.js"
+      }
+    ]
+	},
+	"preview": {
+		"handlers": [
+			{
+				"options": ["_default"],
+				"execute": "INSTALL_SCOPE.setOptions(INSTALL_OPTIONS)"
+      }
+    ]
+	},
+	"options": {
+		"properties": {
+			"gslbBaseURL": {
+				"title": "Salesforce gslb base URL",
+				"description": "Your salesforce gslb base URL?",
+				"order": 0,
+				"type": "string",
+				"format": "url"
+			},
+			"communityEndpointURL": {
+				"title": "Salesforce community endpoint URL",
+				"description": "Your salesforce community endpoint URL?",
+				"order": 1,
+				"type": "string",
+				"format": "url"
+			},
+			"orgId": {
+				"title": "Salesforce organization ID",
+				"description": "Your salesforce organization ID?",
+				"order": 2,
+				"type": "string"
+			},
+			"baseLiveAgentURL": {
+				"title": "Salesforce base live agent URL",
+				"description": "Your salesforce base live agent URL?",
+				"order": 3,
+				"type": "string",
+				"format": "url"
+			},
+			"baseLiveAgentContentURL": {
+				"title": "Salesforce base live agent content URL",
+				"description": "Your salesforce base live agent content URL?",
+				"order": 4,
+				"type": "string",
+				"format": "url"
+			},
+			"deploymentId": {
+				"title": "Salesforce deployment ID",
+				"description": "Your salesforce deployment ID?",
+				"order": 5,
+				"type": "string"
+			},
+			"buttonId": {
+				"title": "Salesforce button ID",
+				"description": "Your salesforce button ID?",
+				"order": 6,
+				"type": "string"
+			},
+			"targetElement": {
+				"title": "Target Element",
+				"description": "Your salesforce live agent target",
+				"order": 7,
+				"type": "string",
+				"format": "selector",
+				"default": "body"
+			},
+			"other": {
+				"title": "other settings for salesforce",
+				"description": "Any configuration salesforce accepts.",
+				"order": 8,
+				"type": "string",
+				"format": "code",
+				"default": "{}"
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"name": "@superbuddy/cloudflare-salesforce-liveagent",
+	"version": "0.1.0",
+	"description": "",
+	"main": "source/app.js",
+	"scripts": {
+		"lint": "standard --fix ./source/**/*.js || true"
+	},
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SuperBuddy/cloudflare-salesforce-liveagent.git"
+	},
+	"author": "SuperBuddy",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/SuperBuddy/cloudflare-salesforce-liveagent/issues"
+	},
+	"homepage": "https://github.com/SuperBuddy/cloudflare-salesforce-liveagent#readme",
+	"dependencies": {},
+	"devDependencies": {
+		"standard": "^9.0.2"
+	},
+	"standard": {
+		"globals": [
+			"INSTALL",
+			"INSTALL_OPTIONS",
+			"INSTALL_SCOPE",
+			"INSTALL_PRODUCT",
+			"INSTALL_ID"
+    	]
+	}
+}

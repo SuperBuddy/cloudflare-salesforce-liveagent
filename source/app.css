@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'Salesforce Sans';
+	src: url('https://www.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.woff') format('woff'),
+	url('https://www.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.ttf') format('truetype');
+}
+
+cloudflare-app[app="salesforce"] .embeddedServiceHelpButton .helpButton .uiButton {
+	background-color: #62A542;
+	font-family: "Salesforce Sans", sans-serif;
+}
+
+
+cloudflare-app[app="salesforce"] .embeddedServiceHelpButton .helpButton .uiButton:focus {
+	outline: 1px solid #62A542;
+}
